@@ -1,14 +1,35 @@
 @use 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import 'partials/header';
+@import 'partials/hero';
 
 html {
   font-size: 62.5%;
+  --theme-font: 'Montserrat', sans-serif;
 }
 
 body {
   font-size: 1.6rem;
 }
 
-.container {
-  margin: 0 4rem;
-  margin-top: 6rem;
+.w-container {
+  width: min(92%, 1166px);
+  margin: auto;
+}
+
+.navbtn {
+  color: #aaa;
+  font-size: 3rem;
+}
+
+.btn {
+  display: block;
+  background-color: #e8b368;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 26rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  text-shadow: 0 0 .6rem #00000052;
 }
