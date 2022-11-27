@@ -31,7 +31,7 @@ export default defineConfig({
       },
       input: {
         main: resolve(root, 'index.html'),
-        content: resolve(root, 'content.html')
+        // content: resolve(root, 'content.html')
       }
     },
 

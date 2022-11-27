@@ -1,10 +1,16 @@
 import '../scss/main.scss'
-import { funcHello } from './second'
+import '../scss/tooltip.scss'
+import '../scss/dropdown.scss'
 
-funcHello('tokimasa')
+import { Tooltip } from './tooltip'
+import { Dropdown } from './dropdown'
 
-const target = document.querySelector('html')! as HTMLElement
+const tooltip = new Tooltip(document.querySelector('.tooltip')!)
+tooltip.init();
 
-target.addEventListener('click', () => {
-  target.classList.toggle('open')
+const dropdowns = document.querySelectorAll('.dropdown')!
+
+dropdowns.forEach((dropdown): void => {
+  const instance = new Dropdown(dropdown)
+  instance.init()
 })
